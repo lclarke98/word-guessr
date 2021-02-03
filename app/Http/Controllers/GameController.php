@@ -8,7 +8,7 @@ use \Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Str;
 
 
-class gameController extends Controller
+class GameController extends Controller
 {
     //function creates a new game
     public function createGame(Request $request)
@@ -163,18 +163,6 @@ class gameController extends Controller
             'word' => $word,
         ]);
     }
-
-    //new comment
-    //new comment
-    //new comment
-    //new comment
-    //new comment
-    //new comment
-    //new comment
-    //new comment
-    //new comment
-    //new comment
-
 
     //function loads the game won page.
     public function gameWin(Request $request)

@@ -31,12 +31,12 @@ Route::get('/home', function () {
 });
 
 
-Route::post('/game/create', 'gameController@createGame');
+Route::post('/game/create', 'App\Http\Controllers\GameController@createGame');
 
-Route::get('/game', 'gameController@game');
+Route::get('/game', 'App\Http\Controllers\GameController@game');
 
-Route::post('/game/guess', 'gameController@turn');
+Route::post('/game/guess', 'App\Http\Controllers\GameController@turn');
 
-Route::get('/gameOver', 'gameController@gameOver');
+Route::get('/gameOver', 'App\Http\Controllers\GameController@gameOver');
 
-Route::get('/gameWin', 'gameController@gameWin');
+Route::get('/gameWin', 'App\Http\Controllers\GameController@gameWin');
