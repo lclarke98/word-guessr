@@ -10,7 +10,6 @@ use Illuminate\Support\Str;
 
 class gameController extends Controller
 {
-
     //function creates a new game
     public function createGame(Request $request)
     {
