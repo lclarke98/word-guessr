@@ -61,16 +61,33 @@
         .m-b-md {
             margin-bottom: 30px;
         }
+
+        nav{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        ul, li{
+            list-style-type: none;
+        }
     </style>
 </head>
 <body>
-<h1>Welcome lets play!!!!</h1>
+<nav>
+    <h1>Wordguessr</h1>
+</nav>
 
-<p>Enter your name to start a game :) </p>
 <form action="/game/create" method="post">
+    <h2>Enter your name to start a game :) </h2>
     @csrf
-    <input name="playerName" type="text" placeholder="Enter your name">
-    <button>Play</button>
+    <ul>
+        <li><input name="playerName" type="text" placeholder="Enter your name"></li>
+        <li><button>Play</button></li>
+    </ul>
 </form>
 </body>
 </html>
